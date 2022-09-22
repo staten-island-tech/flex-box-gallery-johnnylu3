@@ -1,0 +1,20 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
+}
+
+box-sizing: border-box;
+width: 100%;
+border: solid #5b6dcd 10px;
+padding: 5px;
+h2 {margin: 1rem}
+.parent{font-size: 10px;
+    display: flex;
+}
+.px-size {font-size: 10px;} /* any value */
+.rem-size {font-size: 1rem;} /* depends on the root font size */
+.em-size {font-size: 1em;} /* depends on parent */
