@@ -6,23 +6,27 @@ body,
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
 }
-
-box-sizing: border-box;
-width: 100%;
-border: solid #5b6dcd 10px;
-padding: 5px;
 h2 {margin: 1rem}
-.parent{font-size: 30px;
+.parent {font-size: 30px;
     display: flex;
     justify-content: space-around;
-    align-items: center flex-end or start;}
+    align-items: center;}
+
+    {font-size: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;}
+
+
+    
 
 body {background-color: #606c38}
-.px-size {font-size: 10px;} /* any value */
 .rem-size {font-size: 1rem;} /* depends on the root font size */
-.parent {background-color: #283618;}
-.header {}
-.children { border: 1px solid black;
-  width: 28%;
-text-align: center;}
-  flexgrow
+
+.about-col {border: 1px solid rgb(255, 0, 0);
+color: white;}
+
+img {height: 3rem}
+
+
+ 
