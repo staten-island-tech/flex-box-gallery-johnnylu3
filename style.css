@@ -6,17 +6,29 @@ body,
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
 }
-h2 {margin: 1rem}
+
 .head-title {font-size: 5rem;
 text-align: center;
-border: 1px;}
+border: 5px;}
+
+.head {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  border: solid rgb(44, 44, 44);
+  padding: 50px 50px;
+  background-color: #85dcb0;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10rem;}
+
 .about {
   height: 100vh;
   font-size: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;}
+  flex-direction: row;
+  border-radius: 10px;}
 
 .about-row {align-items: center; 
   display: flex;
@@ -24,8 +36,13 @@ border: 1px;}
 height: 100%;
 width: 80vw;
 margin: 0 auto;
-justify-content: space-between;
-background-color: bisque;}
+justify-content: space-evenly;
+background-color: bisque;
+border:solid black;
+border-radius: 10px;}
+
+
+
 
 .about-col { background-color: antiquewhite;
   font-size: 30px;
@@ -34,18 +51,20 @@ background-color: bisque;}
     width: 25%;
     justify-content: space-evenly;
   align-items: center;
-height: 90%;}
+height: 90%;
+border: solid white;
+border-radius: 10px;}
 
     
 
 body {background-color: #606c38}
-.rem-size {font-size: 1rem;} /* depends on the root font size */
-
-.about-col {border: 1px solid rgb(255, 0, 0);
-color: white;}
 
 img {height: 25%;
-  box-shadow: 10px 5px 5px black;}
+box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+border-radius: 10px;
+}
+
+  10px 5px 5px black;
 
 
  
