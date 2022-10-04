@@ -53,17 +53,47 @@ border-radius: 10px;}
   align-items: center;
 height: 90%;
 border: solid white;
-border-radius: 10px;}
+border-radius: 10px;
+position: relative;}
 
     
 
 body {background-color: #606c38}
+.button {
+    width: 10em;
+    height: 5ex;
+    background-color: gold;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;}
+
+    .button:hover {
+      background-color: bisque;}
+
+      a {
+        background-color: powderblue;
+        transition: background-color 0.5s;
+      }
+      
+      a:hover {
+        background-color: gold;
+      }
+      
 
 img {height: 25%;
 box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
 border-radius: 10px;
-}
+flex-wrap: wrap;
+position: relative;}
+img:hover{transform: scale(1.2);
+outline: 1rem solid orange;
+z-index: auto;}
 
+.about-col:hover img:not(:hover) {transform: scale(0.5);
+  opacity: 0.3;}
+  
   10px 5px 5px black;
 
 
