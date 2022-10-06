@@ -19,7 +19,8 @@ border: 5px;}
   background-color: #85dcb0;
   border-radius: 10px;
   font-family: 'Raleway', sans-serif;
-  font-size: 10rem;}
+  font-size: 10rem;
+  margin: 1em;}
 
 .about {
   height: 100vh;
@@ -54,7 +55,12 @@ border-radius: 10px;}
 height: 90%;
 border: solid white;
 border-radius: 10px;
-position: relative;}
+position: relative;
+flex-wrap: wrap;
+}
+
+
+
 
     
 
@@ -81,20 +87,22 @@ body {background-color: #606c38}
         background-color: gold;
       }
       
-
+@media screen and (max-width:900px){ .about-row {flex-direction: row;} 
+img {width: 45%;}
+}
+@media screen and (max-width:600px) { .about-row {flex-direction: column;}
+img {width: 100%;}
+}
+  
 img {height: 25%;
 box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
 border-radius: 10px;
 flex-wrap: wrap;
 position: relative;}
 img:hover{transform: scale(1.2);
-outline: 1rem solid orange;
-z-index: auto;}
+outline: 1rem solid orange;}
 
-.about-col:hover img:not(:hover) {transform: scale(0.5);
-  opacity: 0.3;}
-  
-  10px 5px 5px black;
+
 
 
  
