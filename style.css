@@ -7,6 +7,8 @@ body,
   font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
 }
 
+body {background-color: #606c38}
+
 .head-title {font-size: 5rem;
 text-align: center;
 border: 5px;}
@@ -32,42 +34,38 @@ border: 5px;}
  }
 
  
-.about-row {align-items: center; 
+.about-roew {align-items: center; 
   display: flex;
   flex-direction: row;
 height: 100%;
 width: 80vw;
 margin: 0 auto;
-justify-content: space-evenly;
+justify-content: space-around;
 background-color: bisque;
 border:solid black;
-border-radius: 10px;}
+border-radius: 10px;
+flex-wrap: wrap;}
 
 
 
 
 
 
-.carwd { display:flex;
-  width: 300px;
-flex-direction: column;
-align-items: center;
-padding: 2rem 1rem;}
 
-img {padding: 2rem 1rem;}
 
-.about-col {background-color: antiquewhite;
+
+
+.about-colw {background-color: antiquewhite;
   font-size: 30px;
       display: flex;
       flex-direction: column;
     width: 25%;
     justify-content: space-evenly;
   align-items: center;
-height: 90%;
+height: 40%;
 border: solid white;
 border-radius: 10px;
 position: relative;
-flex-wrap: wrap;
 }
 
 
@@ -75,7 +73,7 @@ flex-wrap: wrap;
 
     
 
-body {background-color: #606c38}
+
 .button {
     width: 10em;
     height: 5ex;
@@ -105,19 +103,31 @@ img {width: 45%;}
 img {width: 100%;}
 }
   
-img {height: 25%;
-box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
-border-radius: 10px;
-position: relative;}
-
-img:hover{transform: scale(1.2);
+.monkey:hover{transform: scale(1.2);
 outline: 1rem solid orange;}
 
-.cards-containwer {max-width: 1000px;
-margin: 0 auto;
+.cards-container {
 display: flex;
+background-color: bisque;
+align-items: center;
+flex-wrap: wrap;
 justify-content: center;
-gap: 30px;}
+margin: 0 auto;
+width: 80vw;}
+
+.card {margin: 3vh;
+width: 300px;
+align-items: center;
+display: flex;
+justify-content: space-around;
+padding: 2rem 1rem;
+flex-direction: column;
+border: solid black;}
+
+.monkey {width: 75%;
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+  border-radius: 10px;
+  position: relative;}
 
 
 
