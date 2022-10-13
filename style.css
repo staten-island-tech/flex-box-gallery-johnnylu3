@@ -34,18 +34,6 @@ border: 5px;}
   height: 1px;
  }
 
- 
-.about-roew {align-items: center; 
-  display: flex;
-  flex-direction: row;
-height: 100%;
-width: 80vw;
-margin: 0 auto;
-justify-content: space-around;
-background-color: bisque;
-border:solid black;
-border-radius: 10px;
-flex-wrap: wrap;}
 
 
 
@@ -56,18 +44,7 @@ flex-wrap: wrap;}
 
 
 
-.about-colw {background-color: antiquewhite;
-  font-size: 30px;
-      display: flex;
-      flex-direction: column;
-    width: 25%;
-    justify-content: space-evenly;
-  align-items: center;
-height: 40%;
-border: solid white;
-border-radius: 10px;
-position: relative;
-}
+
 
 
 
@@ -141,6 +118,30 @@ font-size: 5rem;}
 
 form, button, a {font-size: 4rem;}
 
+.animation {height: 2rem;
+width: 2rem;
+animation: test 5s infinite;
+position: absolute;}
+
+@keyframes test{
+  0% {left: 50%;
+    bottom:10%;
+  background-color: rgb(255, 0, 0);}
+  25% {left: 50%;
+    bottom:20%;
+    transform: scale(3);
+  background-color: blue;}
+  50%{left: 55%;
+    bottom:20%;
+    transform: scale(2);
+  background-color: orange;}
+  75%{left: 55%;
+    bottom:10%;
+    transform:scale(4);
+  background-color: bisque;}
+  100% {left: 50%;
+  bottom:10%;
+background-color: #606c38;}
   
 
 
