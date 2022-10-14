@@ -33,6 +33,26 @@ border: 5px;}
   border-radius: 10px;
   height: 1px;
  }
+ 
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 
 
 
@@ -122,6 +142,13 @@ form, button, a {font-size: 4rem;}
 width: 2rem;
 animation: test 5s infinite;
 position: absolute;}
+
+.head {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 1rem auto;}
 
 @keyframes test{
   0% {left: 50%;
