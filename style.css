@@ -24,15 +24,12 @@ border: 5px;}
   font-size: 10rem;
   margin: 1em;}
 
-.about { height: 100vh;
-  font-size: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  border-radius: 10px;
-  height: 1px;
- }
+  .head {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 1rem auto;}
 
  .head1 {
   position: relative;
@@ -49,7 +46,7 @@ border: 5px;}
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
   }
 
 .head1:hover::before {
@@ -57,25 +54,46 @@ border: 5px;}
   transform: scaleX(1);
 }
  
- 
+.about { height: 100vh;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  height: 1px;
+ }
+ .cards-container {
+  display: flex;
+  background-color: bisque;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80vw;
+position: relative;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .card {margin: 3vh;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    border: solid black;
+    background-color: white;
+    transition: 0.3s;
+  position: relative;}
     
+    .card h2 {margin-bottom: 1rem;
+      font-size: 5rem;}
+      
+      .card:hover{transform: translateY(-3px) ;}
+  
 
+  form, button, a {font-size: 4rem;}
 
-.button {
+  .button {
     width: 10em;
     height: 5ex;
     background-color: gold;
@@ -84,12 +102,9 @@ border: 5px;}
     font-weight: bold;
     color: black;
     cursor: pointer;
-  transition: 0.3s}
+  position: relative;}
 
-    .button:hover {
-      background-color: bisque;}
-
-
+   .button:hover {background-color: bisque;}
       a {
         box-shadow: inset 0 0 0 0 #54b3d6;
         color: #54b3d6;
@@ -103,64 +118,34 @@ border: 5px;}
       }
       
 
-      
+      .monkey {width: 10vw;
+        box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+        border-radius: 10px;
+        position: relative;}
       .monkey {transition: 0.3s;}
+      .monkey:hover{transform: scale(1.2);
+        outline: 1rem solid orange;}
+        
 
-@media all and (max-width:900px){ .about-row {flex-direction: row;} 
-img {width: 45%;}
-}
-@media all and (max-width:600px) { .about-row {flex-direction: column;}
-img {width: 100%;}
-}
-  
-.monkey:hover{transform: scale(1.2);
-outline: 1rem solid orange;}
-
-.cards-container {
-display: flex;
-background-color: bisque;
-align-items: center;
-flex-wrap: wrap;
-justify-content: center;
-margin: auto;
-width: 80vw;
-
+@media all and (max-width:900px){
+.cards-container {flex-direction: row;}
+.card {width: 2px;} 
+.button {width: 20%;}
+.monkey {width: 55%;}
 }
 
-.card {margin: 3vh;
-width: 400px;
-align-items: center;
-display: flex;
-justify-content: space-around;
-padding: 2rem 1rem;
-flex-direction: column;
-border: solid black;
-background-color: white;
-transition: 0.3s;}
-
-.card h2 {margin-bottom: 1rem;
-font-size: 5rem;}
-
-.card:hover{transform: translateY(-3px) ;}
-
-.monkey {width: 10vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
-  border-radius: 10px;
-  position: relative;}
-
-form, button, a {font-size: 4rem;}
-
-.animation {height: 2rem;
+@media all and (max-width:600px) {
+.card {flex-direction: column;}
+.monkey {width: 200px;
+}
+}
+.animation {
+height: 2rem;
 width: 2rem;
 animation: test 5s infinite;
-position: absolute;}
-
-.head {display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90vw;
-    margin: 1rem auto;}
+position: absolute;
+}
+      
 
 @keyframes test{
   0% {left: 50%;
