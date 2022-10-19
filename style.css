@@ -127,18 +127,19 @@ position: relative;}
         outline: 1rem solid orange;}
         
 
-@media all and (max-width:900px){
-.cards-container {flex-direction: row;}
-.card {width: 2px;} 
-.button {width: 20%;}
-.monkey {width: 55%;}
-}
-
-@media all and (max-width:600px) {
-.card {flex-direction: column;}
-.monkey {width: 200px;
-}
-}
+        @media (max-width: 900px){
+          .cards-container {flex-direction: row;}
+          .card {width: 42%;} 
+          .button {width: 100%;}
+          .monkey {width: 65%;}
+          }
+          
+          @media all and (max-width:600px) {
+          .cards-container {flex-direction: column;}
+          .card {width:75%}
+            .monkey {width: 50%;
+          }
+          
 .animation {
 height: 2rem;
 width: 2rem;
