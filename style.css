@@ -121,7 +121,7 @@ position: relative;}
       }
       
 
-      .monkey {width: 10vw;
+      .monkey {width: 12vw;
         box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
         border-radius: 10px;
         position: relative;}
@@ -130,18 +130,18 @@ position: relative;}
         outline: 1rem solid orange;}
         
 
-        @media (max-width: 900px){
+        @media (max-width: 1145px){
           .cards-container {flex-direction: row;}
-          .card {width: 65%;} 
+          .card {width: 41%;} 
           .button {width: 100%;}
           .monkey {width: 50%;}
           }
           
-          @media all and (max-width:600px) {
+          @media all and (max-width:806px) {
           .cards-container {flex-direction: column;}
-          .card {width:75%}
+          .card {width:65%}
             .monkey {width: 50%;
-          }
+          }}
           
 .animation {
 height: 2rem;
