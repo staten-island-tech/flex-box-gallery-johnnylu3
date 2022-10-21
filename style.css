@@ -132,9 +132,9 @@ position: relative;}
 
         @media (max-width: 900px){
           .cards-container {flex-direction: row;}
-          .card {width: 42%;} 
+          .card {width: 65%;} 
           .button {width: 100%;}
-          .monkey {width: 65%;}
+          .monkey {width: 50%;}
           }
           
           @media all and (max-width:600px) {
